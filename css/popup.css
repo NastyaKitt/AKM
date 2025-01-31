@@ -1,0 +1,142 @@
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333af;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-items: center;
+    z-index: 999;
+}
+.wopen {
+    display: grid;
+}
+.popup button{
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    background-color: transparent;
+    border: none;
+}
+.popup button:hover svg path{
+    fill: #DC3545;
+}
+.popup button:active svg path{
+    fill: #ee1f34;
+}
+.popup button:hover {
+    transform: rotate(90deg);
+    transition: all 1s;
+}
+.popup button:active {
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+.popup1 {
+    width: calc(100% - 40rem);
+    height: calc(100% - 20rem);
+    background-color: #DC3545;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #000 2px 5px 5px 5px ;
+}
+.popup h1 {
+    font-size: 3rem;
+}
+.popup p {
+    margin-top: 2rem;
+}
+.popupleft, .popupRight {
+    width: 50%;
+    height: calc(100% - 4rem);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+.popupRight input {
+    height: 3rem;
+    width: 40rem;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 2rem;
+    font-family: "Montserrat";
+}
+.popupRight input:focus {
+    border: none;
+}
+.popupRight input::placeholder {
+    color: #ffffffc0;
+    font-family: "Montserrat";
+}
+input.sub {
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+    margin-top: 2rem;
+    font-family: "Montserrat";
+}
+input.sub:hover {
+    background-color: #ffffffc9;
+    transform: scale(0.99);
+    transition: all 1s;
+}
+input.sub:active {
+    background-color: #DC3545;
+    transform: scale(0.90);
+    transition: all 0.1s;
+}
+
+
+
+/* --------------------политИка */
+.politicPopup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ad;
+    z-index: 9998;
+    display: none;
+    align-items: center;
+    justify-items: center;
+}
+.politicOpen {
+    display: grid;
+}
+.politicPopup button{
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    background-color: transparent;
+    border: none;
+}
+.politicPopup button:hover svg path{
+    fill: #DC3545;
+}
+.politicPopup button:active svg path{
+    fill: #ee1f34;
+}
+.politicPopup button:hover {
+    transform: rotate(90deg);
+    transition: all 1s;
+}
+.politicPopup button:active {
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+.politicTxt {
+    width: calc(100% - 40rem);
+    height: calc(100% - 20rem);
+    overflow-y: scroll;
+    background-color: #DC3545;
+    padding: 2rem;
+}
+.politicTxt h1{
+    margin-bottom: 2rem;
+}

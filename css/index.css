@@ -1,0 +1,507 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    background-color: #212529;
+    color: #fff;
+}
+h1,h2,h3,p {
+    margin: 0;
+}
+h1.logo {
+    font-family: "Faster One";
+    font-weight: 500;
+}
+button {
+    cursor: pointer;
+}
+main, footer {
+    width: calc(100% - 40rem);
+    height: auto;
+    padding: 0 20rem;
+}
+/* ------------------ХЭДЕР */
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+.sleep {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    overflow-x: hidden;
+}
+header button{
+    width: 5rem;
+    height: 5rem;
+    border: 1px #000 solid;
+    border-radius: 100%;
+    background-color: #DC3545;
+    color: #fff;
+    font-size: 3rem;
+}
+.catalog {
+    width: 70%;
+    opacity: 0.7;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #DC3545;
+    border-radius: 3rem;
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    position: relative;
+    left: 0;
+    visibility: visible;
+    transition: background-color 1s, all 1s;
+    display: flex;
+}
+.catalog:hover {
+    opacity: 1;
+}
+.catalog a:hover {
+    color: #ffffffc2;
+    transition: color 0.5s;
+}
+.catalog a:active {
+    color: #ffffff70;
+    transition: color 0.5s;
+}
+
+.minus, .plus {
+    display: block;
+    visibility: visible;
+    transition: background-color 1s;
+    opacity: 0.7;
+
+}
+.minus:hover, .plus:hover {
+    background-color: #ad212f;
+    transition: background-color 1s;
+    opacity: 1;
+
+}
+.minus:active, .plus:active{
+    background-color: #d31629;
+    transition: background-color 0.1s, transform 1s;
+    transform: scale(0.90);
+    opacity: 1;
+}
+
+.nonactive {
+    transition: all 2s;
+    display: none;
+    left: -100rem;
+    visibility: hidden;
+}
+
+/* ----------------ГЛАВНЫЙ ЭКРАН */
+.firstWin {
+    width: 100%;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.firstWin h1{
+    width: 60%;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+.firstWin span {
+    margin-top: 2rem;
+}
+.firstWin p{
+    width: 60%;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+.firstWin button{
+    width: 25rem;
+    height: 5rem;
+    border-radius: 50px;
+    background-color: #DC3545;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10rem;
+}
+.firstWin button:hover{
+    background-color: #ad212f;
+    transition: background-color 1s, transform 1s;
+    transform: scale(0.99);
+}
+.firstWin button:active{
+    background-color: #d31629;
+    transition: background-color 0.1s, transform 1s;
+    transform: scale(0.90);
+}
+
+
+/* ------------------ПРАЙС ЛИСТ */
+.secondWin {
+    width: 100%;
+    height: auto;
+}
+.secondWin h2{
+    text-align: center;
+    margin:0 0 5rem 0;
+    font-size: 2rem;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.svg {
+    border: none;
+    background-color: transparent;
+    transform: rotate(-180deg);
+}
+.svg:hover path {
+    stroke: #DC3545;
+    transition: stroke 0.5s;
+}
+.svg:active path {
+    stroke: #ad212f;
+    transition: stroke 0.1s;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 1rem 0; 
+}
+.price1 {
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+}
+.rotate {
+    transform: rotate(0);
+}
+div.open{
+    display: block;
+}
+.priceItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.priceItem p{
+    color: #d2d2d2;
+}
+.priceItem p b{
+    color: #DC3545;
+}
+
+
+/* -----------ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС */
+.threeWin {
+    width: 100%;
+    height: auto;
+    margin: 6.25rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.threeWin h1{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.whyUs {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+.whyUs h1{
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+.whyUs p{
+    color: #D2D2D2;
+    width: 80%;
+}
+.threeWin button {
+    width: 20rem;
+    height: 4rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: #DC3545;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+.threeWin button:hover {
+    background-color: #ad212f;
+    transition: background-color 1s, transform 1s;
+    transform: scale(0.99);
+
+}
+.threeWin button:active{
+    background-color: #d31629;
+    transition: background-color 0.1s, transform 1s;
+    transform: scale(0.90);
+}
+
+/* ------------------ОТЗЫВЫ */
+.fourWin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6.25rem 0;
+}
+.fourWin h1 {
+    margin-bottom: 5rem;
+}
+.review {
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review p{
+    font-size: 1rem;
+    padding: 0.5rem 0 0 0;
+}
+.leftFour, .centerWin, .rightWin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftFour {
+    width: 22rem;
+    margin-right: 1rem;
+}
+.centerWin {
+    width: 36rem;
+    margin-right: 1rem;
+
+}
+.rightWin {
+    width: 20rem;
+}
+.leftUpFour{
+    height: 13rem;
+    background-color: #DC3545;
+    border-radius: 30px;
+}
+.leftUpFour h1{
+    font-size: 1.5rem;
+}
+.leftDownFour {
+    height: 13rem;
+    background-color: #52A5EF;
+    border-radius: 30px;
+}
+.centerUpFour {
+    background-color: #52A5EF;
+    border-radius: 30px;
+    height: 13rem;
+}
+.centerDownFour {
+    background-color: #52A5EF;
+    border-radius: 30px;
+    height: 13rem;
+}
+.rightWin {
+    background-color: #52A5EF;
+    border-radius: 30px;
+}
+.leftUpFour, .leftDownFour ,.centerUpFour, .centerDownFour {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 16rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.rightWin h3{
+    margin: 1rem 0;
+}
+.rightWin p {
+    padding: 0;
+    margin: 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* -------------------ФОРМА */
+.fiveWin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6.25rem 0;
+    text-align: center;
+}
+.fiveLeft, .fiveRight {
+    width: calc(50% - 4rem);
+    height: calc(40rem - 2rem);
+    background-color: #216eada2;
+    padding: 1rem;
+    border-radius:30px;
+}
+.fiveLeft iframe {
+    padding: 1rem 0;
+    border-radius:30px;
+}
+form {
+    height: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form1 input{
+    width: 80%;
+    height: 3rem;
+    border: #fff 1px solid;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 2rem;
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+}
+.form1 input::placeholder{
+    color: #fff;
+}
+.form2 input{
+    width: 50%;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #DC3545;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.form2 input:hover {
+    background-color: #ad212f;
+    transition: background-color 1s, transform 1s;
+    transform: scale(0.99);
+
+}
+.form2 input:active{
+    background-color: #d31629;
+    transition: background-color 0.1s, transform 1s;
+    transform: scale(0.90);
+}
+
+.chek {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.chek input {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0;
+} 
+.chek p{
+    font-size: 1rem;
+} 
+
+.form1, .form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.politic {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+/* --------------------------------Специалисты */
+
+.sixWin {
+    width: 100%;
+    margin: 6.25rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.sixPerson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sixPerson h2{
+    margin: 1rem 0;
+}
+.photos {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10000rem;
+}
+
+/* ---------------------ФУТЕР */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.down {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.down button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+footer h2 {
+    margin: 2rem 0 1rem;
+}
+footer h3{
+    margin: 2rem 0 2rem;
+}
