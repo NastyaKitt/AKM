@@ -1,0 +1,148 @@
+@media (max-width: 1700px) {
+    main {
+        width: calc(100% - 30rem);
+        padding: 0 15rem;
+    }
+    
+    .fiveLeft iframe {
+        width: 100%;
+        height: 70%;
+    }
+}
+@media (max-width: 1500px) {
+    html {
+        font-size: 14px;
+    }
+    main {
+        width: calc(100% - 25rem);
+        padding: 0 12.5rem;
+    }
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+    .popup1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .popupleft, .popupRight {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 1024px) {
+    .rightWin{
+        display: none;
+    }
+    .sixPerson img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .fiveWin {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .fiveLeft, .fiveRight {
+    width: 100%;
+    margin-bottom: 2rem;
+    }
+    .fiveLeft iframe {
+        height: 90%;
+    }
+
+}
+@media (max-width: 900px) {
+    main, footer {
+        width: calc(100% - 20rem);
+        padding: 0 10rem;
+    }
+    .sixPerson img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .popup1 {
+        width: calc(100% - 25rem);
+    }
+}
+@media (max-width: 700px) {
+    html {
+        font-size: 10px;
+    }
+    main, footer {
+        width: calc(100% - 15rem);
+        padding: 0 7.5rem;
+    }
+    .fiveLeft iframe {
+        height: 80%;
+    }
+    .review {
+        height: 30rem;
+    }
+    .centerDownFour, .leftDownFour {
+        margin-top: 2rem;
+    }
+    .leftUpFour, .leftDownFour, .centerUpFour, .centerDownFour {
+        border-radius: 15px;
+    }
+    .price h1 {
+        font-size: 1.5rem;
+    }
+    .politicTxt  {
+        width: calc(100% - 20rem);
+    }
+}
+@media (max-width: 550px) {
+    html {
+        font-size: 8px;
+    }
+    main, footer {
+        width: calc(100% - 15rem);
+        padding: 0 7.5rem;
+    }
+    .fiveLeft iframe {
+        height: 80%;
+    }
+    .review {
+        flex-direction: column;
+        height: auto;
+    }
+    .leftFour{
+        width: 100%;
+    }
+    .centerWin{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .centerDownFour, .leftDownFour {
+        margin-top: 2rem;
+    }
+    .leftUpFour, .leftDownFour, .centerUpFour, .centerDownFour {
+        border-radius: 15px;
+    }
+    .price h1 {
+        font-size: 1.5rem;
+    }
+    .politicTxt  {
+        width: calc(100% - 20rem);
+    }
+    .politic {
+        font-size: 1rem;
+    }
+    .popup1 {
+        height: calc(100% - 80rem);
+    }
+    .whyUs {
+        width: 45%;
+    }
+    .sleep {
+        width: 95%;
+    }
+    .svg svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .firstWin button {
+            margin-top: 5rem;
+    }
+}
